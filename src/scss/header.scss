@@ -1,19 +1,22 @@
 $color: rgb(223, 105, 81);
 
 %nav__fonts {
-    font-family: Google Sans;
+    font-family: GoogleSans;
     font-size: 1.1rem;
     color: #212832;
+}
+
+header {
+    position:absolute;
+    top: 47px;
+    left: 148px;
 }
 
 .nav {
     display: flex;
     align-items: center;
-    position: absolute;
-    z-index: 100;
 
     width: 1160px;
-    margin: 47px 91px 0 148px;
 
     a {
         @extend %nav__fonts;
@@ -21,13 +24,13 @@ $color: rgb(223, 105, 81);
 }
 
 .nav__logo {
-    margin-right: 222px;
+    margin-right: 200px;
 }
 
 .nav__items {
     display: flex;
     justify-content: space-between;
-    width: 748px;
+    width: 900px;
     list-style: none;   
 }
 

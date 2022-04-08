@@ -1,3 +1,5 @@
+@import 'fonts';
+
 * {
     box-sizing: border-box;
 }
@@ -7,13 +9,42 @@ body {
     padding: 0;
     margin: 0 auto;
 
+    .decor {
+        width: 1440px;
+        display: flex;
+        justify-content: space-between;
+        z-index: -1;
+
+        .decor__left {
+            width: 100vh;
+            height: 100vh;
+            background: {
+                image: url('@img/hero/Ellipse_8.png');
+                repeat: no-repeat;
+                position: top left;
+            };
+        }
+    
+        .decor__right {
+            width: 100vh;
+            height: 100vh;
+            background: {
+                image: url('@img/hero/Decore.png');
+                repeat: no-repeat;
+
+            };
+        }
+    }
+
+    
+
     a {
         text-decoration: none;
     }
 }
 
-@import "header.scss";
-@import "hero.scss";
+@import "header";
+@import "hero";
 
 
 

@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 1440px;
+    padding: 0;
+    margin: 0 auto;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+@import "header.scss";
+@import "hero.scss";
+
+
+
+
+
+

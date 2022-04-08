@@ -1,0 +1,63 @@
+$color: rgb(223, 105, 81);
+
+%nav__fonts {
+    font-family: Google Sans;
+    font-size: 1.1rem;
+    color: #212832;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+
+    width: 1160px;
+    margin: 47px 91px 0 148px;
+
+    a {
+        @extend %nav__fonts;
+    }
+}
+
+.nav__logo {
+    margin-right: 222px;
+}
+
+.nav__items {
+    display: flex;
+    justify-content: space-between;
+    width: 748px;
+    list-style: none;   
+}
+
+.nav__item a:hover {
+    color: $color;
+    text-shadow: 0px 15px 30px rgba(223, 105, 81, 0.5);
+    border-bottom: 3px solid $color;
+}
+
+.sign {
+    padding: 9px 21px;
+    border: 1px solid #212832;
+    border-radius: 5px;
+    background: transparent;
+
+    &:hover {
+        border-color: $color;
+        color: $color;
+        box-shadow: 2px 2px 2px $color;
+    }
+}
+
+.nav__lang {
+    @extend %nav__fonts;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    &:hover {
+        color: $color;
+        text-shadow: 0px 15px 30px rgba(223, 105, 81, 0.7);
+    }
+}

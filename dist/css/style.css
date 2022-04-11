@@ -106,7 +106,7 @@ body a {
 
 body .cards {
   position: relative;
-  margin-top: 7.8rem;
+  margin-top: 8.8rem;
 }
 
 body .cards .cards__header {
@@ -114,7 +114,6 @@ body .cards .cards__header {
 }
 
 body .cards .cards__header .cards__suptitle {
-  text-transform: uppercase;
   font-family: Poppins;
   font-weight: 600;
   font-size: 1.1rem;
@@ -135,10 +134,48 @@ body .cards .cards__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 3.2rem 4rem 0 5.8rem;
+}
+
+.no-webp body .cards .cards__items .rome {
+  background-image: url("../img/destinations/rome.png"); }
+
+body .cards .cards__items .rome {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.no-webp body .cards .cards__items .london {
+  background-image: url("../img/destinations/london.png"); }
+
+body .cards .cards__items .london {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.no-webp body .cards .cards__items .erope {
+  background-image: url("../img/destinations/erope.png"); }
+
+body .cards .cards__items .erope {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.no-webp body .cards .cards__items .erope::before {
+  background-image: url("../img/destinations/Decore.png"); }
+
+body .cards .cards__items .erope::before {
+  content: "";
+  position: absolute;
+  top: 140px;
+  right: -67px;
+  z-index: -1;
+  width: 100px;
+  height: 254px;
+  background-repeat: no-repeat;
 }
 
 .nav__lang,
@@ -196,11 +233,11 @@ header {
 
 .nav__item a:hover {
   color: rgb(223, 105, 81);
-  text-shadow: 0px 15px 30px rgba(223, 105, 81, 0.5);
+  text-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
   border-bottom: 3px solid rgb(223, 105, 81);
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
+  -webkit-transition: 0.19s ease-in;
+  -o-transition: 0.19s ease-in;
+  transition: 0.19s ease-in;
 }
 
 .sign {
@@ -215,9 +252,9 @@ header {
   color: rgb(223, 105, 81);
   -webkit-box-shadow: 2px 2px 2px rgb(223, 105, 81);
           box-shadow: 2px 2px 2px rgb(223, 105, 81);
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
+  -webkit-transition: 0.15s ease-in;
+  -o-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
 }
 
 .nav__lang {
@@ -523,6 +560,9 @@ a .service__content {
 .service__items:hover {
   -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
           box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  -webkit-transition: 0.15s ease-in;
+  -o-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
 }
 
 .service__items:hover::before {
@@ -535,6 +575,9 @@ a .service__content {
   height: 100px;
   background: #DF6951;
   border-radius: 30px 0px 10px;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .service__items img {
@@ -602,6 +645,84 @@ a .service__content {
           transform: rotate(-90deg);
 }
 
+.destination__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 500px;
+}
+
+.card__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  height: 457px;
+  width: 25%;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+
+.card__item:hover {
+  height: 477px;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.2), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.1), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.1), 0px 20px 13px rgba(0, 0, 0, 0.1), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.03), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.2), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.1), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.1), 0px 20px 13px rgba(0, 0, 0, 0.1), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.03), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.03);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card__info {
+  width: 100%;
+  height: 130px;
+  padding: 30px 25px;
+  border-radius: 0px 0px 24px 24px;
+  background-color: #fff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 124.5%;
+  color: #5E6282;
+}
+
+.card__info-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__info-suptitle {
+  margin-top: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__info-suptitle .duration {
+  margin-left: 1rem;
+}
+
 .webp body .header__decor .decor__left { background-image: url(../img/hero/Ellipse_8.webp); }
 
 .webp body .header__decor .decor__right { background-image: url(../img/hero/Decore.webp); }
+
+.webp body .cards .cards__items .rome { background-image: url(../img/destinations/rome.webp); }
+
+.webp body .cards .cards__items .london { background-image: url(../img/destinations/london.webp); }
+
+.webp body .cards .cards__items .erope { background-image: url(../img/destinations/erope.webp); }
+
+.webp body .cards .cards__items .erope::before { background-image: url(../img/destinations/Decore.webp); }

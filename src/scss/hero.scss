@@ -1,4 +1,9 @@
 $color: #DF6951;
+
+.hero {
+    margin-left: 7.8rem;
+}
+
 .hero__content {
     position: relative;
     display: flex;
@@ -114,14 +119,12 @@ $color: #DF6951;
     }
 
     &-imges {
-        // position: relative;
         margin: 0.7rem 2rem 0 0;
 
         .hero__traveller {
             position: absolute;
             top: 0;
-            left: 425px;
-            animation: traveller 3s;
+            left: 369px;
         }
 
         .plane1 {
@@ -134,7 +137,7 @@ $color: #DF6951;
         .plane2 {
             position: absolute;
             top: 103px;
-            right: 90px;
+            left: 986px;
             z-index: -1;
             animation: planes 2s;
         }

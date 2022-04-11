@@ -16,7 +16,7 @@ header {
     align-items: center;
 
     width: 100%;
-    margin: 3rem 0 0 8.8rem;
+    margin: 3rem 0 0 7.8rem;
 
     a {
         @extend %nav__fonts;
@@ -37,6 +37,7 @@ header {
     width: 90%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style: none;   
 }
 

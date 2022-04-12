@@ -74,7 +74,7 @@ a {
         &::before {
             content: "";
             position: absolute;
-            top: 300px;
+            bottom: -30px;
             left: -33px;
             z-index: -1;
 

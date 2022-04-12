@@ -1,0 +1,186 @@
+$lightgray: #84829A;
+
+.books {
+    margin: 5.2rem 4rem 0 8.8rem;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        &-text {
+            width: 45%;
+
+            .books__items {
+                width: 75%;
+                
+                .books__item {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 2.1rem;
+
+                    &-text {
+                        margin-left: 1.2rem;
+                        
+                        .books__title {
+                            font-weight: 700;
+                            line-height: 19.92px;
+                        }
+
+                        .books__text {
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-container {
+            display: flex;
+            align-items: center;
+            width: 45%;
+            padding-top: 2rem;
+
+            .books__card {
+                margin-top: 2rem;
+                width: 70%;
+                padding: 1.25rem 1.56rem 1.87rem 1.56rem;
+
+                background: #FFFFFF;
+                box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+                border-radius: 26px;
+
+                &-image {
+                    border-radius: 24px;
+                }
+
+                &-title {
+                    margin-top: 1.7rem;
+                    line-height: 1.3rem;
+                    color: #080809;
+                }
+
+                &-info {
+                    display: flex;
+                    color: $lightgray;
+                    margin-top: 0.8rem;
+
+                    &--date {
+                        border-right: 1px solid $lightgray;
+                        padding-right: 0.2rem;
+                        margin-right: 0.3rem;
+                    }
+                }
+
+                &-icons {
+                    width: 50%;
+                    height: 2.5rem;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 1.2rem;
+
+                    .card__icon {
+                        width: 26%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        background: #F5F5F5;
+                        border-radius: 50%;
+                    }
+                }
+
+                &-footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 2.6rem;
+
+                    &--people {
+                        display: flex;
+                        justify-content: space-between;
+
+                        width: 53%;
+                        color: $lightgray;
+
+                        div {
+                            margin-left: 1.1rem;
+                        }
+                    }
+
+                    &--heart {
+                        position: relative;
+                    }
+
+                    svg:hover {
+                        stroke: #DF6951;
+                    }
+
+                    .card__ongoing {
+                        position: absolute;
+                        bottom: 30px;
+                        left: -650%;
+                        width: 260px;
+                        height: 129px;
+        
+                        background: #FFFFFF;
+                        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+                        border-radius: 18px;
+        
+                        &-wrapper {
+                            display: flex;
+                            width: 100%;
+                            height: 100%;
+        
+                            img {
+                                border-radius: 50%;
+                            }
+                        }
+        
+                        &-icon {
+                            width: 30%;  
+                            padding: 18px 0 0 20px; 
+                        }
+        
+                        &-content {
+                            width: 70%;
+                            padding-top: 18px;
+                            margin-left: 0.8rem;
+        
+                            &--title {
+                                margin-top: 0.3rem;
+                                color: #080809;
+                                font-size: 0.9rem;
+                            }
+        
+                            &--completed {
+                                margin-top: 0.9rem;
+                                font-size: 0.9rem;
+                                color: #080809;
+        
+                                span {
+                                    color: #8A79DF;
+                                }
+                            }
+        
+                            .card__ongoing-line {
+                                width: 87%;
+                                height: 0.3rem;
+        
+                                margin-top: 0.6rem;
+                                background-color: #F5F5F5;
+                                border-radius: 30px;
+        
+                                &--supline {
+                                    width: 40%;
+                                    height: 0.3rem;
+                                    background: #8A79DF;
+                                    border-radius: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

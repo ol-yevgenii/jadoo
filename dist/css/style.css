@@ -63,6 +63,12 @@ body {
   position: relative;
   padding: 0;
   margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 124.5%;
+  color: #5E6282;
 }
 
 body .header__decor {
@@ -104,16 +110,7 @@ body a {
   text-decoration: none;
 }
 
-body .cards {
-  position: relative;
-  margin-top: 8.8rem;
-}
-
-body .cards .cards__header {
-  text-align: center;
-}
-
-body .cards .cards__header .cards__suptitle {
+body .suptitle {
   font-family: Poppins;
   font-weight: 600;
   font-size: 1.1rem;
@@ -121,13 +118,23 @@ body .cards .cards__header .cards__suptitle {
   margin: 0;
 }
 
-body .cards .cards__header .cards__title {
+body .title {
   text-transform: capitalize;
   font-family: Volkhov;
   font-weight: 700;
   font-size: 3.1rem;
+  line-height: 4rem;
   color: #14183E;
-  margin: 0.7rem 0 0 0;
+  margin-top: 1rem;
+}
+
+body .cards {
+  position: relative;
+  margin-top: 8.8rem;
+}
+
+body .cards .cards__header {
+  text-align: center;
 }
 
 body .cards .cards__items {
@@ -176,6 +183,25 @@ body .cards .cards__items .erope::before {
   width: 100px;
   height: 254px;
   background-repeat: no-repeat;
+}
+
+.no-webp body .books .books__card-image {
+  background-image: url("../img/books/book.png"); }
+
+body .books .books__card-image {
+  width: 100%;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.no-webp body .books .books__content-container {
+  background-image: url("../img/books/Ellipse.png"); }
+
+body .books .books__content-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 104%;
 }
 
 .nav__lang,
@@ -715,6 +741,224 @@ a .service__content {
   margin-left: 1rem;
 }
 
+.books {
+  margin: 5.2rem 4rem 0 8.8rem;
+}
+
+.books__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.books__content-text {
+  width: 45%;
+}
+
+.books__content-text .books__items {
+  width: 75%;
+}
+
+.books__content-text .books__items .books__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.1rem;
+}
+
+.books__content-text .books__items .books__item-text {
+  margin-left: 1.2rem;
+}
+
+.books__content-text .books__items .books__item-text .books__title {
+  font-weight: 700;
+  line-height: 19.92px;
+}
+
+.books__content-text .books__items .books__item-text .books__text {
+  font-weight: 400;
+}
+
+.books__content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45%;
+  padding-top: 2rem;
+}
+
+.books__content-container .books__card {
+  margin-top: 2rem;
+  width: 70%;
+  padding: 1.25rem 1.56rem 1.87rem 1.56rem;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 26px;
+}
+
+.books__content-container .books__card-image {
+  border-radius: 24px;
+}
+
+.books__content-container .books__card-title {
+  margin-top: 1.7rem;
+  line-height: 1.3rem;
+  color: #080809;
+}
+
+.books__content-container .books__card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #84829A;
+  margin-top: 0.8rem;
+}
+
+.books__content-container .books__card-info--date {
+  border-right: 1px solid #84829A;
+  padding-right: 0.2rem;
+  margin-right: 0.3rem;
+}
+
+.books__content-container .books__card-icons {
+  width: 50%;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.2rem;
+}
+
+.books__content-container .books__card-icons .card__icon {
+  width: 26%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F5F5F5;
+  border-radius: 50%;
+}
+
+.books__content-container .books__card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.6rem;
+}
+
+.books__content-container .books__card-footer--people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 53%;
+  color: #84829A;
+}
+
+.books__content-container .books__card-footer--people div {
+  margin-left: 1.1rem;
+}
+
+.books__content-container .books__card-footer--heart {
+  position: relative;
+}
+
+.books__content-container .books__card-footer svg:hover {
+  stroke: #DF6951;
+}
+
+.books__content-container .books__card-footer .card__ongoing {
+  position: absolute;
+  bottom: 30px;
+  left: -650%;
+  width: 260px;
+  height: 129px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 18px;
+}
+
+.books__content-container .books__card-footer .card__ongoing-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.books__content-container .books__card-footer .card__ongoing-wrapper img {
+  border-radius: 50%;
+}
+
+.books__content-container .books__card-footer .card__ongoing-icon {
+  width: 30%;
+  padding: 18px 0 0 20px;
+}
+
+.books__content-container .books__card-footer .card__ongoing-content {
+  width: 70%;
+  padding-top: 18px;
+  margin-left: 0.8rem;
+}
+
+.books__content-container .books__card-footer .card__ongoing-content--title {
+  margin-top: 0.3rem;
+  color: #080809;
+  font-size: 0.9rem;
+}
+
+.books__content-container .books__card-footer .card__ongoing-content--completed {
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+  color: #080809;
+}
+
+.books__content-container .books__card-footer .card__ongoing-content--completed span {
+  color: #8A79DF;
+}
+
+.books__content-container .books__card-footer .card__ongoing-content .card__ongoing-line {
+  width: 87%;
+  height: 0.3rem;
+  margin-top: 0.6rem;
+  background-color: #F5F5F5;
+  border-radius: 30px;
+}
+
+.books__content-container .books__card-footer .card__ongoing-content .card__ongoing-line--supline {
+  width: 40%;
+  height: 0.3rem;
+  background: #8A79DF;
+  border-radius: 30px;
+}
+
 .webp body .header__decor .decor__left { background-image: url(../img/hero/Ellipse_8.webp); }
 
 .webp body .header__decor .decor__right { background-image: url(../img/hero/Decore.webp); }
@@ -726,3 +970,7 @@ a .service__content {
 .webp body .cards .cards__items .erope { background-image: url(../img/destinations/erope.webp); }
 
 .webp body .cards .cards__items .erope::before { background-image: url(../img/destinations/Decore.webp); }
+
+.webp body .books .books__card-image { background-image: url(../img/books/book.webp); }
+
+.webp body .books .books__content-container { background-image: url(../img/books/Ellipse.webp); }

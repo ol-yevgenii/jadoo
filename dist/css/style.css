@@ -742,7 +742,7 @@ a .service__content {
 }
 
 .books {
-  margin: 5.2rem 4rem 0 8.8rem;
+  margin: 8.2rem 4rem 0 8.8rem;
 }
 
 .books__content {
@@ -855,6 +855,15 @@ a .service__content {
           align-items: center;
   background: #F5F5F5;
   border-radius: 50%;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.books__content-container .books__card-icons .card__icon:hover {
+  background: #f0f0f0;
+  -webkit-box-shadow: 3px 0px 5px rgba(222, 222, 222, 0.7882352941);
+          box-shadow: 3px 0px 5px rgba(222, 222, 222, 0.7882352941);
 }
 
 .books__content-container .books__card-footer {
@@ -891,6 +900,9 @@ a .service__content {
 
 .books__content-container .books__card-footer svg:hover {
   stroke: #DF6951;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .books__content-container .books__card-footer .card__ongoing {

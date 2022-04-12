@@ -324,7 +324,7 @@ header {
   color: #DF6951;
 }
 
-.hero__content-text .title {
+.hero__content-text .hero__title {
   position: relative;
   font-family: Volkhov;
   font-weight: bold;

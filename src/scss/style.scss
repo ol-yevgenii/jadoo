@@ -76,6 +76,33 @@ body {
         margin-top: 1rem;
     }
 
+    .cross__decor {
+        width: 153px;
+        height: 166px;
+    
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    
+        &-cross {
+            width: 13px;
+            height: 26px;
+    
+            font-family: 'Roboto';
+            font-size: 22px;
+            line-height: 26px;
+    
+            color: #E5E5E5;
+        }
+    
+        .red {
+            color: #FF7152;
+        }
+    
+        .blue {
+            color: #6246E5;
+        }
+    }
+
     .cards {
         position: relative;
         margin-top: 8.8rem;
@@ -151,7 +178,24 @@ body {
                 size: 104%;
             };
         }
-    }    
+    }  
+    
+    .subscribe__wrapper{
+        width: 100%;
+        background: {
+            image: url('@img/subscribe/bg.png');
+            position: right;
+            repeat: no-repeat;
+        };
+
+        .subscribe__form-input {
+            background: {
+                image: url('@img/subscribe/mess.svg');
+                repeat: no-repeat;
+                position: 5% 50%;
+            };
+        }
+    }
 }
 
 @import "header";
@@ -161,3 +205,5 @@ body {
 @import "books";
 @import "testimonials";
 @import "logos";
+@import "subscribe";
+@import "footer";

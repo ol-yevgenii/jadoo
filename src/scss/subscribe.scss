@@ -1,0 +1,94 @@
+.subscribe {
+    margin: 8.2rem 8rem 0 6.8rem;
+    &__decor {
+        position: absolute;
+        bottom: -69px;
+        right: -100px;
+    }
+}
+
+.subscribe__wrapper {
+    position: relative;
+    border-radius: 129px 20px 20px 20px;
+    height: 407px;
+    padding: 4.9rem 9rem;
+
+    .subscribe__title {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        text-align: center;
+        margin-bottom: 4.9rem;
+    }
+
+    .subscribe__form {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 80%;
+        height: 3.8rem;
+        margin: 0 auto;
+
+        &-input {
+            width: 60%;
+            height: 100%;
+            padding-left: 7%;
+
+            background: #FFFFFF;
+            border: none;
+            border-radius: 10px;
+
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+
+            color: #39425D;
+            outline-color: #cfc8e9;
+        }
+
+        &-btn {
+            width: 30%;
+            height: 100%;
+
+            font-family: 'OpenSans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 23px;
+
+            color: #FFFFFF;
+            background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+            border: none;
+            border-radius: 10px;
+
+            transition: all .2s;
+
+            &:hover {
+                cursor: pointer;
+
+                background: linear-gradient(180deg, #FF946D 100%, #FF7D68 0%);
+                box-shadow: 0 100px 80px rgb(0 0 0 / 2%), 0 64.8148px 46.8519px rgb(0 0 0 / 2%), 0 38.5185px 25.4815px rgb(0 0 0 / 1%), 0 20px 13px rgb(0 0 0 / 1%), 0 8.14815px 6.51852px rgb(0 0 0 / 1%), 0 1.85185px 3.14815px rgb(0 0 0 / 0%);
+            }
+        }
+    }
+
+    .subscribe__decor-send {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -1rem;
+        right: -1rem;
+
+        width: 70px;
+        height: 70px;
+
+        border-radius: 50%;
+        background: linear-gradient(201.65deg, #747DEF 10.27%, #5E3BE1 100%);
+
+        img {
+            margin: 0 0 5px 6px;
+        }
+    }
+}

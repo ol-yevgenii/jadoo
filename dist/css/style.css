@@ -971,6 +971,128 @@ a .service__content {
   border-radius: 30px;
 }
 
+.testimonials {
+  margin: 8.2rem 4rem 0 8.8rem;
+}
+
+.testimonials__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.testimonials__wrapper .testimonials__header {
+  width: 50%;
+  margin-right: 2rem;
+}
+
+.testimonials__wrapper .testimonials__header-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 87px;
+  height: 12px;
+  margin-top: 82px;
+}
+
+.testimonials__wrapper .testimonials__header-dots .dot {
+  border-radius: 50%;
+  background: #E5E5E5;
+  width: 12px;
+}
+
+.testimonials__wrapper .testimonials__header-dots .dot__active {
+  background: #39425D;
+}
+
+.testimonials__wrapper .testimonials__content {
+  position: relative;
+  width: 60%;
+}
+
+.testimonials__wrapper .testimonials__content-image {
+  position: absolute;
+  top: -40px;
+  left: -35px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonials__wrapper .testimonials__content-image img {
+  width: 68px;
+}
+
+.testimonials__wrapper .testimonials__content-text {
+  line-height: 32px;
+}
+
+.testimonials__wrapper .testimonials__content-name {
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.testimonials__wrapper .testimonials__content-location {
+  margin-top: 0.4rem;
+}
+
+.testimonials__wrapper .testimonials__content-container {
+  width: 90%;
+  padding: 1.75rem 4.25rem 2rem 2rem;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 10px;
+}
+
+.testimonials__wrapper .testimonials__content-container:nth-child(2) {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  z-index: -1;
+  border: 2px solid #F7F7F7;
+}
+
+.testimonials__wrapper .testimonials__content-container:nth-child(3) {
+  display: none;
+}
+
+.testimonials__wrapper .testimonials__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10%;
+}
+
+.testimonials__wrapper .testimonials__arrows .arrows__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 14px;
+  height: 71.5px;
+  margin-top: 5rem;
+}
+
 .webp body .header__decor .decor__left { background-image: url(../img/hero/Ellipse_8.webp); }
 
 .webp body .header__decor .decor__right { background-image: url(../img/hero/Decore.webp); }
